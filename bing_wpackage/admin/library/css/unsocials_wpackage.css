@@ -1,0 +1,148 @@
+/**
+ * Plugin Name: WPackage - Bing Maps Microsoft
+ * Version: 1.0.0
+ * Author: Mez {Massimo Maestri} 
+ * Author URI: https://www.massimomaestri.com
+ */
+
+/* File CSS Include  */
+
+@import 'wpackage_maps.css';
+
+/* CSS All Page Plugins */
+
+h1,h2,h3,h4,h5,h6,p{
+    font-weight: 300;
+    color:#1d2327;
+}
+h1.titlePage{
+    margin-top:40px;
+    margin-bottom:30px;
+    color: rgb(44, 0, 255);
+}
+div.description_code{
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0px 0px 10px -8px #000;
+}
+p.subTitle{
+    font-weight:100;
+    font-size:20px;
+    margin:0;
+}
+p span.shortcode {
+    padding: 0px 5px;
+    font-family: 'Arial' !important;
+}
+p.byFlex {
+    display: flex;
+    align-items: stretch;
+    border-radius: 5px;
+    overflow: auto;
+}
+i.fa-copy {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 0px;
+    width: auto;
+    background-color: #8bf5a5;
+}
+i.fa-copy::before {
+    content: "\f0c5";
+    background: #1c1c1c;
+    color: #8bf5a5;
+    padding: 10px;
+}
+section.main{
+    padding: 20px;
+}
+div.un_header{
+    margin: 1.5% auto;
+    height:100%;
+}
+.un_nav{
+    display: flex;
+    align-items: flex-start;
+}
+.un_nav img{
+    margin-right: 10px;
+    width: 50px;
+}
+.un_nav h1 sup {
+    font-size: 14px;
+}
+
+/* Bottoni Plugin */
+
+form{
+    margin: 20px 0;
+}
+
+input.input_btn{
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+input.input_btn:hover{
+    cursor:pointer;
+    color: rgb(44, 0, 255);
+    border-color: rgb(44, 0, 255);
+}
+
+div#box_message {
+    width: 200px;
+    background-color: #3c3c3c;
+    padding: 10px 0px;
+    margin-top: 20px;
+}
+
+div#box_message #message {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+.wpack_box{
+    /* margin-top:50px; */
+}
+
+.wpack_box .box {
+    width: 17.5%;
+    background-color: #1d2327;
+    padding: 25px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -2px #000;
+    float: left;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    height: 150px;
+}
+
+.wpack_box .box h3{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.wpack_box .box a {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(44, 0, 255);
+    color: #fff;
+    padding: 15px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+p.mapsStyle {
+  font-size: 16px;
+  background-color: #000;
+  padding: 10px;
+  color: aquamarine;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -1,0 +1,240 @@
+/**
+ * Plugin Name: WPackage - Bing Maps Microsoft
+ * Version: 1.0.0
+ * Author: Mez {Massimo Maestri} 
+ * Author URI: https://www.massimomaestri.com
+ */
+ 
+
+#mappa{
+    height: 650px!important;
+    position: relative;
+    box-shadow: 0px 0px 70px -50px #000;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    width: max-content;
+    height: 150px;
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+
+
+.section{
+    overflow: hidden;
+    width: 85%;
+    float:left;
+}
+
+
+.container .btn_maps{
+    display: block;
+}
+
+
+.blue{
+    background-color: #006989;
+}
+
+
+.red{
+    background-color: #F73545;
+}
+
+
+.btn_maps{
+    border-radius: 10px;
+    height: 150px;
+    position: relative;
+    text-align: center;
+    width: 150px; 
+    cursor: pointer;
+}
+
+
+.btn_maps p.descrizione{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    user-select: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.btn_maps img{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    pointer-events: none;
+
+}
+
+
+.freccia{
+    width: 7.5%;
+    float: left;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.freccia:hover{
+    cursor: pointer;
+}
+
+
+div.slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    width: 3vw;
+    height: 3vw;
+}
+
+
+.dx{
+    transform: rotate(-45deg);
+}
+
+
+.sx{
+    transform: rotate(135deg);
+}
+
+.overlay_{
+    z-index: 99999;
+    background-color: #006989;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.wrapper_{
+    z-index: 1;
+    position: absolute;
+}
+
+
+.cerchio{
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #F73545;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation: gira 2s linear infinite;
+}
+
+
+@keyframes gira {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.scompari{
+    animation: via 1s linear 1 forwards;
+}
+
+
+@keyframes via {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+.btn_parcheggi{
+    width: 140px;
+    height: 150px;
+    text-align: center;
+    border: 2px solid rgb(129, 129, 129);
+    display: block;
+    margin: 0 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+
+.titolo_parcheggio{
+    font-size: 16px;
+    color: #f73545;
+    user-select: none;
+    margin: 0;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+.descrizione_parcheggio{
+    color: rgb(88, 88, 88);
+    user-select: none;
+    font-size: 12px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+
+.posti_parcheggio{
+    font-size: 12px;
+    text-align: center;
+    color: rgb(129, 129, 129);
+}
+
+
+#tutto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+
+#all{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    margin: 0;
+}

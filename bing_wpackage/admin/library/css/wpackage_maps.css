@@ -1,0 +1,328 @@
+/**
+ * Plugin Name: WPackage - Bing Maps Microsoft
+ * Version: 1.0.0
+ * Author: Mez {Massimo Maestri} 
+ * Author URI: https://www.massimomaestri.com
+ */
+
+/* General Style */
+
+button.btn,
+a.btn {
+    font-size: 16px;
+    border: 1px solid #4620fd;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #4620fd;
+    display:block;
+    width:150px;
+    text-align: center;
+    text-decoration: none;
+}
+table.shortBox {
+    width: auto;
+    margin-top: 40px;
+}
+table.shortBox td,
+table.shortBox th{
+    border: 1px solid #000;
+    padding: 0px 10px;
+}
+table.shortBox th{
+    color: #4620fd;
+    text-align: left;
+    font-size:20px;
+    padding:10px 10px;
+}
+table.shortBox p.nameMaps {
+    font-size: 16px;
+    font-weight: 300;
+    color: #1d2327;
+}
+table.shortBox p.settingSingleMaps{
+    cursor:pointer;
+}
+
+table.shortBox p.settingSingleMaps a{
+    color:#4620fd;
+}
+
+.bingMaps .box {
+    background: rgb(29,35,39,1);
+    }
+
+.bingMaps .box h3{
+    color:#fff!important;
+}
+
+.bingMaps .box a {
+    background-color: #1d2327!important;
+    color: #ffb900!important;
+    border: 1px solid #ffb900!important;
+}
+
+.container{
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+
+    position: relative;
+    height: 100vh;
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+.esterno .riga{
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #fff;
+    font-family: "Helvetica Neue";
+    width: 100%;
+    padding: 0px 10px;
+    background-color: #2b3135;
+    color:#fff;
+    font-size: 16px;
+}
+
+.esterno .riga::placeholder,
+.esterno .riga:hover,
+.esterno .riga:focus{
+    color: #fff;
+}
+
+.esterno .riga:focus{
+    border-color: #fff!important;
+    box-shadow: none!important;
+    outline: none!important;
+}
+
+.esterno{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1d2327ed;
+    padding: 5%;
+    bottom: 0;
+    right: 0;
+    overflow: scroll;
+}
+.esterno form{
+    width: 550px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%); */
+    margin: 0 auto;
+}
+.esterno h1{
+    color:#fff;
+}
+
+.esterno .menu_bot{
+    display: flex;
+    align-items: stretch;
+}
+
+.esterno .menu_bot a,
+.esterno .menu_bot input[type="reset"]{
+    width: 48%;
+}
+
+
+.esterno input[type='color'],
+.esterno input[name='esadecimale']{
+    padding: 0;
+    float: right;
+    cursor: pointer;
+    margin: 0px 10px 0px 0px;
+    height: 35px;
+}
+.esterno input[type='color']{
+    width: 50px;
+}
+
+.esterno input[name='esadecimale']{
+    width: 100px;
+}
+
+.esterno .catColor {
+    margin: 20px 0px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+div.good{
+    position: fixed;
+    width: 300px;
+    background-color: #65d9a2;
+    padding: 20px;
+    bottom: 60px;
+    right: 0;
+    border-radius: 5px;
+}
+
+div.bad{
+    position: fixed;
+    width: 300px;
+    background-color: #f66;
+    padding: 20px;
+    bottom: 60px;
+    right: 0;
+    border-radius: 5px;
+}
+
+div.good h1,
+div.bad h1{
+    line-height: normal;
+    font-size: 14px;
+}
+
+
+
+.container .stacked{
+    height: 50px;
+    display: inline-block;
+    font-family: "Helvetica";
+}
+
+
+input.stacked{
+    width: 100%;
+    margin: 0 0 5% 0;
+    border: none;
+    font-family: "Helvetica Neue";
+}
+
+
+/* .stacked[label]{
+    width: 50%;
+} */
+
+.esterno .menu_bot a,
+.esterno p.btn_maps{
+    background-color: transparent!important;
+    color: #fff!important;
+    border: 1px solid #fff!important;
+}
+
+.esterno p.btn_maps{
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin: 0;
+    cursor: pointer;
+}
+
+input[type="submit"].riga,
+input[type="submit"].stacked,
+input[type="button"].riga,
+.esterno .menu_bot a,
+.esterno .menu_bot input[type="reset"],
+.app input[type='button']{
+    background-color: transparent;
+    color: #ffb900;
+    border: 1px solid #ffb900;
+    transition: background-color .2s;
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+input[type="submit"].riga:hover,
+input[type="submit"].stacked:hover,
+input[type="button"].riga:hover,
+.esterno .menu_bot a:hover,
+.esterno .menu_bot input[type="reset"]:hover,
+.app input[type='button']:hover{
+    cursor: pointer;
+    color:#1d2327;
+    background-color: #ffb900;
+}
+
+
+.esterno label{
+    font-weight: 700;
+    /* font-size: 18px; */
+    padding-bottom: 20px;
+}
+
+
+@media only screen and (max-height: 500px){
+    .esterno{
+        position: relative;
+        top: inherit;
+        left: inherit;
+        transform: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+input[type="file"]{
+    display:none;
+}
+
+.tabellaFile table.table th{
+    color: #fff;
+    border: 1px solid aquamarine;
+}
+.tabellaFile table.table input[type="checkbox"]{
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.tabellaFile table.table td{
+    border: 1px solid #fff;
+    color: #b9b9b9;
+    padding: 10px;
+}
+
+.tabellaFile input.riga{
+    width: 50%;
+    margin: 0;
+    float: left;
+}
+
+/* .app{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
+.app table{
+    min-width: 550px;
+}
+
+
+section.home #addMap{
+    display:none;
+}
+
+a.linkGeoJson {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    border: 1px solid #ffb900;
+    color:#ffb900!important;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.esterno form textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.esterno form textarea::placeholder{
+    color: #fff;
+}
